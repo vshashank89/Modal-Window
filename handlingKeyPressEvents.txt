@@ -1,0 +1,14 @@
+// Handling KeyPress Events ('Esc') :
+// 1. Keyboard events are so-called 'global-events' , because they do NOT happen on one specific element. 
+// 2 . So for global(keyboard) events we listen on the entire document.
+// 3. So by using 'document.addEventListener' we are listening for the event everywhere , no matter where it happens on the page.
+//4. There are 3 types of events for the keyboard : 
+// a) keydown : this is fired as soon as we press down the key once
+// b) keypress : is fired continuously as we keep our finger on certain key.
+// c) keyup : This happens only when we lift our finger off the key. 
+
+// 5. how to know which key is pressed ?
+// a) When any key is pressed , a keydown event is generated.
+// b) When an event like this happens , Javascript in fact generates an object which contains all the information about the event.
+// c) javascript allows to access that object in the event handler function , So we should give the function a parameter / Ex:function(e) e for event /
+// d) As soon as the event occurs , javascript will call this function with the event object as an argument.
